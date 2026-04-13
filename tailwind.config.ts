@@ -15,8 +15,8 @@ const config: Config = {
         muted: '#8a8fa8'
       },
       fontFamily: {
-        serif: ['var(--font-cormorant)', 'serif'],
-        sans: ['var(--font-jost)', 'sans-serif'],
+        serif: ['var(--font-playfair)', 'serif'],
+        sans: ['var(--font-dmsans)', 'sans-serif'],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

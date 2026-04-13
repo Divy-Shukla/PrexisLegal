@@ -2,44 +2,43 @@
 
 import { motion } from "framer-motion";
 import PracticeCard from "@/components/PracticeCard";
-import { Scale, Shield, Landmark, Users, Briefcase, Building, FileText } from "lucide-react";
 
 export default function PracticeAreasPage() {
   const practiceAreas = [
     {
       title: "Litigation & Dispute Resolution",
       description: "Representing sovereign interests and corporate entities in high-stakes commercial disputes, writ adjudicational challenges, and appellate advocacy before the Supreme Court of India.",
-      icon: <Scale size={20} />
+      numberCounter: "01"
     },
     {
       title: "Criminal Law",
       description: "White-collar defense, compliance advisory, and sophisticated legal strategies for complex penal matters.",
-      icon: <Shield size={20} />
+      numberCounter: "02"
     },
     {
       title: "Arbitration",
       description: "Neutral, efficient, and binding resolution of international and domestic commercial conflicts through strategic mediation.",
-      icon: <Building size={20} />
+      numberCounter: "03"
     },
     {
       title: "Family & Personal Law",
       description: "Discreet counsel for sensitive matrimonial matters, wealth management, and complex estate succession planning.",
-      icon: <Users size={20} />
+      numberCounter: "04"
     },
     {
       title: "Real Estate",
       description: "Advising on prime property acquisitions, structural financing, and regulatory clearances for landmark developments.",
-      icon: <Landmark size={20} />
+      numberCounter: "05"
     },
     {
       title: "Employment & Labour",
       description: "Strategic advisory on executive compensation, corporate restructuring, and high-level human capital relations.",
-      icon: <Briefcase size={20} />
+      numberCounter: "06"
     },
     {
       title: "Civil Matters",
       description: "Dedicated advocacy for personal rights, contractual enforcement, and broad-spectrum civil resolutions.",
-      icon: <FileText size={20} />
+      numberCounter: "07"
     }
   ];
 
@@ -52,12 +51,12 @@ export default function PracticeAreasPage() {
         transition={{ duration: 0.8 }}
         className="mb-20"
       >
-        <span className="text-gold uppercase tracking-[0.3em] text-sm font-semibold mb-6 block">Core Disciplines</span>
-        <h1 className="font-serif text-5xl md:text-7xl text-white mb-8">
-          Our <span className="text-gold italic">Expertise.</span>
+        <span className="text-gold uppercase tracking-[0.15em] font-sans text-[11px] font-medium mb-6 block">Core Disciplines</span>
+        <h1 className="font-serif font-bold text-5xl md:text-[48px] text-white mb-8">
+          Our Practice Areas
         </h1>
         <div className="h-px w-24 bg-gold mb-8" />
-        <p className="text-cream/80 text-lg leading-relaxed max-w-2xl">
+        <p className="text-cream/80 text-lg leading-relaxed max-w-2xl font-sans">
           Distinguished counsel across seven specialized disciplines, tailored for the complexities of modern jurisprudence.
         </p>
       </motion.div>
@@ -69,7 +68,7 @@ export default function PracticeAreasPage() {
              <PracticeCard 
                title={area.title}
                description={area.description}
-               icon={area.icon}
+               numberCounter={area.numberCounter}
                delay={index * 0.1}
              />
           </div>

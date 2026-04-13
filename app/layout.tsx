@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Jost } from "next/font/google";
+import { Playfair_Display, DM_Sans } from "next/font/google";
 import "./globals.css";
 
-const cormorant = Cormorant_Garamond({ 
+const playfair = Playfair_Display({ 
   subsets: ["latin"], 
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-cormorant",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-playfair",
 });
 
-const jost = Jost({ 
+const dmsans = DM_Sans({ 
   subsets: ["latin"],
-  variable: "--font-jost",
+  weight: ["400", "500", "600"],
+  variable: "--font-dmsans",
 });
 
 import Navbar from "@/components/Navbar";
@@ -53,7 +54,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${cormorant.variable} ${jost.variable} font-sans bg-navy text-cream antialiased`}>
+      <body className={`${playfair.variable} ${dmsans.variable} font-sans bg-navy text-cream antialiased`}>
         <Navbar />
         <main className="min-h-screen">
           {children}

@@ -46,12 +46,12 @@ export default function CaseResultsPage() {
         transition={{ duration: 0.8 }}
         className="mb-20"
       >
-        <span className="text-gold uppercase tracking-[0.3em] text-sm font-semibold mb-6 block">Proof of Authority</span>
-        <h1 className="font-serif text-5xl md:text-7xl text-white mb-8">
-          Landmark <span className="text-gold italic">Precedents.</span>
+        <span className="text-gold uppercase tracking-[0.15em] font-sans text-[11px] font-medium mb-6 block">Proof of Authority</span>
+        <h1 className="font-serif font-bold text-5xl md:text-[48px] text-white mb-8">
+          Case Results
         </h1>
         <div className="h-px w-24 bg-gold mb-8" />
-        <p className="text-cream/80 text-lg leading-relaxed max-w-2xl">
+        <p className="text-cream/80 text-lg leading-relaxed max-w-2xl font-sans">
           We speak through our victories. A curated selection of matters where our strategic intervention redefined the legal landscape.
         </p>
       </motion.div>

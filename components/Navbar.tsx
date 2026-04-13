@@ -22,16 +22,16 @@ export default function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-navy/90 backdrop-blur-md py-3 shadow-lg" : "bg-transparent py-6"
+        scrolled ? "bg-navy/95 border-b border-white/5 py-4 shadow-lg" : "bg-transparent py-6"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
-          <div className="font-serif text-gold text-3xl italic tracking-widest border border-gold/30 w-10 h-10 flex items-center justify-center rounded-sm">
+          <div className="font-serif text-gold text-lg border border-gold w-[32px] h-[32px] flex items-center justify-center bg-transparent shrink-0 font-bold">
             PL
           </div>
-          <span className="font-serif text-2xl tracking-wide font-medium text-white">PrexisLegal</span>
+          <span className="font-serif text-xl font-bold text-white tracking-wide">PrexisLegal</span>
         </Link>
 
         {/* Desktop Links */}
@@ -45,16 +45,16 @@ export default function Navbar() {
             <Link
               key={item.name}
               href={item.path}
-              className="text-sm tracking-widest uppercase text-cream/70 hover:text-gold transition-colors"
+              className="font-sans text-[12px] font-medium tracking-[0.1em] uppercase text-white hover:border-b-2 hover:border-gold pb-1 border-b-2 border-transparent transition-all"
             >
               {item.name}
             </Link>
           ))}
           <Link
             href="/contact"
-            className="text-sm tracking-widest uppercase text-cream/70 hover:text-gold transition-colors"
+            className="font-sans text-[12px] font-medium tracking-[0.1em] uppercase text-white hover:border-b-2 hover:border-gold pb-1 border-b-2 border-transparent transition-all"
           >
-            Contact
+            CONTACT
           </Link>
         </div>
 
@@ -62,7 +62,7 @@ export default function Navbar() {
         <div className="hidden md:block">
           <Link
             href="/#book"
-            className="bg-gold text-navy px-6 py-3 text-sm tracking-widest uppercase font-medium hover:bg-gold-2 transition-all"
+            className="bg-gold text-navy px-6 py-[10px] rounded-[2px] text-[11px] font-sans font-semibold uppercase tracking-widest hover:bg-white transition-colors"
           >
             Book Consultation
           </Link>
@@ -70,7 +70,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Toggle */}
         <button
-          className="md:hidden text-gold"
+          className="md:hidden text-white"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -84,7 +84,7 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "100vh" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden absolute top-full left-0 w-full bg-navy/95 backdrop-blur-md flex flex-col items-center justify-center gap-8 border-t border-gold/10"
+            className="md:hidden absolute top-full left-0 w-full bg-navy border-t border-white/10 flex flex-col items-center justify-center gap-8"
           >
             {[
               { name: "About Us", path: "/about" },
@@ -97,7 +97,7 @@ export default function Navbar() {
                 key={item.name}
                 href={item.path}
                 onClick={() => setMobileMenuOpen(false)}
-                className="text-xl font-serif text-cream hover:text-gold transition-colors"
+                className="font-sans text-[14px] font-medium tracking-[0.1em] uppercase text-white hover:text-gold transition-colors"
               >
                 {item.name}
               </Link>
@@ -105,7 +105,7 @@ export default function Navbar() {
             <Link
               href="/#book"
               onClick={() => setMobileMenuOpen(false)}
-              className="mt-4 bg-gold text-navy px-8 py-4 tracking-widest uppercase font-medium text-sm"
+              className="mt-4 bg-gold text-navy rounded-[2px] px-8 py-[12px] text-[12px] font-sans font-semibold uppercase tracking-widest"
             >
               Book Consultation
             </Link>

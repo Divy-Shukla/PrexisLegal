@@ -46,9 +46,9 @@ export default function TestimonialsPage() {
         transition={{ duration: 0.8 }}
         className="mb-20 text-center"
       >
-        <span className="text-gold uppercase tracking-[0.3em] text-sm font-semibold mb-6 block">Client Perspectives</span>
-        <h1 className="font-serif text-5xl md:text-7xl text-white mb-8">
-          Words of <span className="text-gold italic">Validation.</span>
+        <span className="text-gold uppercase tracking-[0.15em] font-sans text-[11px] font-medium mb-6 block">Client Perspectives</span>
+        <h1 className="font-serif font-bold text-5xl md:text-[48px] text-white mb-8">
+          Client Testimonials
         </h1>
         <div className="h-px w-24 bg-gold mx-auto mb-8" />
       </motion.div>

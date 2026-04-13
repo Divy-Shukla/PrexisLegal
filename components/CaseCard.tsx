@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Scale } from "lucide-react";
 
 interface CaseCardProps {
   title: string;
@@ -11,25 +10,21 @@ interface CaseCardProps {
 export default function CaseCard({ title, category, description, delay = 0 }: CaseCardProps) {
   return (
     <motion.div
-      initial={{ opacity: 0, scale: 0.95 }}
-      whileInView={{ opacity: 1, scale: 1 }}
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.6, delay }}
-      whileHover={{ y: -5 }}
-      className="bg-navy-3 border border-gold/10 p-8 hover:border-gold/30 transition-all group"
+      className="bg-[#0e1628] border-l-[3px] border-l-gold border-y border-y-white/10 border-r border-r-white/10 p-10 hover:bg-[#131d35] transition-colors group flex flex-col h-full"
     >
-      <div className="flex items-center justify-between mb-6">
-        <span className="text-xs uppercase tracking-widest text-gold bg-navy-2 px-3 py-1 rounded-sm border border-gold/20">
+      <div className="mb-6">
+        <span className="font-sans text-[11px] uppercase tracking-[0.15em] text-white/50 border border-white/10 px-3 py-1 bg-[#0a0f1e]">
           {category}
         </span>
-        <Scale size={20} className="text-gold/50 group-hover:text-gold transition-colors" />
       </div>
       
-      <h3 className="font-serif text-2xl text-white mb-4 line-clamp-2">{title}</h3>
+      <h3 className="font-serif font-bold text-[22px] text-white mb-4 line-clamp-2">{title}</h3>
       
-      <div className="h-px w-12 bg-gold/50 mb-4 group-hover:w-24 transition-all duration-300" />
-      
-      <p className="text-sm text-muted leading-relaxed line-clamp-3">
+      <p className="font-sans text-[14px] text-muted leading-relaxed line-clamp-3">
         {description}
       </p>
     </motion.div>

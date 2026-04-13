@@ -13,12 +13,12 @@ export default function AboutPage() {
         transition={{ duration: 0.8 }}
         className="text-center max-w-4xl mx-auto mb-24 mt-12"
       >
-        <span className="text-gold uppercase tracking-[0.3em] text-sm font-semibold mb-6 block">Firm History</span>
-        <h1 className="font-serif text-5xl md:text-7xl text-white mb-8">
-          The Sovereign <span className="text-gold italic">Counsel.</span>
+        <span className="text-gold uppercase tracking-[0.15em] font-sans text-[11px] font-medium mb-6 block">Firm History</span>
+        <h1 className="font-serif font-bold text-5xl md:text-[48px] text-white mb-8">
+          About PrexisLegal
         </h1>
         <div className="h-px w-24 bg-gold mx-auto mb-8" />
-        <p className="text-cream/80 text-lg leading-relaxed">
+        <p className="text-cream/80 text-lg leading-relaxed font-sans">
           PrexisLegal represents a legacy of unparalleled authority. Our practice is defined by the intersection of strategic vision and modern counsel, currently serving as the trusted architects of legal stability for India's premier enterprises.
         </p>
       </motion.div>
@@ -31,10 +31,10 @@ export default function AboutPage() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="font-serif text-3xl md:text-4xl text-white mb-6">
-            A Modern Legacy defined by Strategy.
+          <h2 className="font-serif font-bold text-3xl md:text-4xl text-white mb-6">
+            A Modern Legacy defined by Strategy
           </h2>
-          <div className="space-y-6 text-muted leading-relaxed text-sm">
+          <div className="space-y-6 text-muted leading-relaxed font-sans text-[15px]">
             <p>
               In the quiet corners of our chambers, decisions are made that shape the commercial landscape of the nation. We do not merely practice law; we engineer solutions that safeguard the future of those we represent.
             </p>
@@ -46,22 +46,24 @@ export default function AboutPage() {
             </p>
           </div>
         </motion.div>
+        
         <motion.div
-          initial={{ opacity: 0, x: 50 }}
+          initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="relative h-[500px] border border-gold/20 p-2"
+          className="relative h-[500px]"
         >
-          <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=1000&auto=format&fit=crop')] bg-cover bg-center grayscale brightness-75" />
-          <div className="absolute inset-0 bg-navy/20 mix-blend-multiply" />
+          <div className="w-full h-full bg-[#0e1628] border border-white/10 flex items-center justify-center">
+             <span className="font-sans text-[12px] text-white/30 text-center">Advocate Photography<br/>— Coming Soon</span>
+          </div>
         </motion.div>
       </div>
 
       {/* PILLARS SECTION */}
       <div className="text-center mb-16">
-        <span className="text-gold uppercase tracking-widest text-xs font-semibold mb-4 block">Core Foundations</span>
-        <h2 className="font-serif text-4xl text-white">The Four Pillars</h2>
+        <span className="text-gold uppercase tracking-[0.15em] font-sans text-[11px] font-medium mb-4 block">Core Foundations</span>
+        <h2 className="font-serif font-bold text-4xl text-white">The Four Pillars</h2>
       </div>
 
       <div className="grid md:grid-cols-4 gap-6">
@@ -69,11 +71,11 @@ export default function AboutPage() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="bg-navy-2 border border-gold/10 p-8 text-center hover:border-gold/30 transition-all"
+          className="bg-navy border border-white/10 p-8 text-center"
         >
-          <Scale size={32} className="text-gold mb-6 mx-auto" />
-          <h3 className="font-serif text-xl text-white mb-4">Integrity</h3>
-          <p className="text-xs text-muted leading-relaxed">An unyielding commitment to the ethical core of the legal profession. Our reputation is our most valuable asset.</p>
+          <Scale size={32} className="text-gold mb-6 mx-auto stroke-1" />
+          <h3 className="font-serif font-bold text-xl text-white mb-4">Integrity</h3>
+          <p className="font-sans text-[13px] text-muted leading-relaxed">An unyielding commitment to the ethical core of the legal profession. Our reputation is our most valuable asset.</p>
         </motion.div>
 
         <motion.div 
@@ -81,11 +83,11 @@ export default function AboutPage() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
-          className="bg-navy-2 border border-gold/10 p-8 text-center hover:border-gold/30 transition-all"
+          className="bg-navy border border-white/10 p-8 text-center"
         >
-          <Shield size={32} className="text-gold mb-6 mx-auto" />
-          <h3 className="font-serif text-xl text-white mb-4">Precision</h3>
-          <p className="text-xs text-muted leading-relaxed">A deep comprehension of the minutiae that dictate the outcome of complex matters. We leave nothing to chance.</p>
+          <Shield size={32} className="text-gold mb-6 mx-auto stroke-1" />
+          <h3 className="font-serif font-bold text-xl text-white mb-4">Precision</h3>
+          <p className="font-sans text-[13px] text-muted leading-relaxed">A deep comprehension of the minutiae that dictate the outcome of complex matters. We leave nothing to chance.</p>
         </motion.div>
 
         <motion.div 
@@ -93,11 +95,11 @@ export default function AboutPage() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className="bg-navy-2 border border-gold/10 p-8 text-center hover:border-gold/30 transition-all"
+          className="bg-navy border border-white/10 p-8 text-center"
         >
-          <Landmark size={32} className="text-gold mb-6 mx-auto" />
-          <h3 className="font-serif text-xl text-white mb-4">Advocacy</h3>
-          <p className="text-xs text-muted leading-relaxed">Relentless representation in the halls of justice. We champion our clients' interests with fierce authority.</p>
+          <Landmark size={32} className="text-gold mb-6 mx-auto stroke-1" />
+          <h3 className="font-serif font-bold text-xl text-white mb-4">Advocacy</h3>
+          <p className="font-sans text-[13px] text-muted leading-relaxed">Relentless representation in the halls of justice. We champion our clients' interests with fierce authority.</p>
         </motion.div>
 
         <motion.div 
@@ -105,11 +107,11 @@ export default function AboutPage() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.3 }}
-          className="bg-navy-2 border border-gold/10 p-8 text-center hover:border-gold/30 transition-all"
+          className="bg-navy border border-white/10 p-8 text-center"
         >
-          <BookOpen size={32} className="text-gold mb-6 mx-auto" />
-          <h3 className="font-serif text-xl text-white mb-4">Accessibility</h3>
-          <p className="text-xs text-muted leading-relaxed">Complex counsel demystified. We prioritize clear communication and absolute transparency.</p>
+          <BookOpen size={32} className="text-gold mb-6 mx-auto stroke-1" />
+          <h3 className="font-serif font-bold text-xl text-white mb-4">Accessibility</h3>
+          <p className="font-sans text-[13px] text-muted leading-relaxed">Complex counsel demystified. We prioritize clear communication and absolute transparency.</p>
         </motion.div>
       </div>
     </div>

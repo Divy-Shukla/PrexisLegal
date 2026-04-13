@@ -52,12 +52,12 @@ export default function OurTeamPage() {
         transition={{ duration: 0.8 }}
         className="text-center max-w-4xl mx-auto mb-20"
       >
-        <span className="text-gold uppercase tracking-[0.3em] text-sm font-semibold mb-6 block">Sovereign Authority</span>
-        <h1 className="font-serif text-5xl md:text-7xl text-white mb-8">
-          The Minds <span className="text-gold italic">Behind the Strategy.</span>
+        <span className="text-gold uppercase tracking-[0.15em] font-sans text-[11px] font-medium mb-6 block">Sovereign Authority</span>
+        <h1 className="font-serif font-bold text-5xl md:text-[48px] text-white mb-8">
+          Meet the Team
         </h1>
         <div className="h-px w-24 bg-gold mx-auto mb-8" />
-        <p className="text-cream/80 text-lg leading-relaxed">
+        <p className="text-cream/80 text-lg leading-relaxed font-sans">
           Our partners bring decades of jurisdictional mastery and strategic foresight to every case, blending tradition with modern digital agility.
         </p>
       </motion.div>
